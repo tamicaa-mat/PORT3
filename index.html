@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Tamara Caamaño</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #578970, #a3f3f4);
+        }
+
+        /* estilo imagen izquierda */
+        .top-left-image {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            width: 550px;
+            height: auto;
+            border-radius: 0%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* estilo imagen derecha */
+        .top-derecha-image {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            width: 550px;
+            height: auto;
+            border-radius: 0%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            text-align: center;
+            background-color: rgb(147, 208, 103);
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 200%;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            font-size: 1.5em;
+            color: #666;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #ff85b2;
+        }
+
+        /* boton mostrar el correo */
+        button {
+            background-color: #ff85b2;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1.1em;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #f96a9b;
+        }
+
+        /* estilo oculto para el correo */
+        #email {
+            display: none;
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Imagen  izquierda -->
+    <img src="C:\Users\54112\Downloads\Sin título.png" alt="Logo" class="top-left-image">
+
+    <!-- Imagen  derecha -->
+    <img src="C:\Users\54112\Downloads\WhatsApp Image 2024-09-18 at 19.08.59.jpeg" alt="Logo" class="top-derecha-image">
+
+        <div class="container">
+            <h1>Profesora de Matemática</h1>
+            <p>Estudiante de programación en proceso...</p>
+
+
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/tamara-caama%C3%B1o-abab652a8" target="_blank" title="LinkedIn">LinkedIn</a>
+            <a href="https://discord.com/channels/@me" target="_blank" title="Discord">Discord</a>
+            <a href="https://www.instagram.com/tenqueser?igsh=MW9pd3E4aXQwYWJoOQ==" target="_blank" title="Instagram">Instagram</a>
+        </div>
+
+        <!-- botón para mostrar el correo -->
+        <button onclick="mostrarCorreo()">Mostrar correo</button>
+
+        <!-- correo -->
+        <p id="email">tamaralicmat@gmail.com</p>
+    </div>
+
+    <script>
+        function mostrarCorreo() {
+            var email = document.getElementById("email");
+            if (email.style.display === "none") {
+                email.style.display = "block";
+            } else {
+                email.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
